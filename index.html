@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
+  
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+  
   <head>
     <meta charset="utf-8">
     <title>My test page</title>
   </head>
+  
   <body>
     <h1>すごい地図</h1>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2l2ZXR0aSIsImEiOiJjazZ4Y3BrNXEwN2phM2RwZjY3eTV6MXhmIn0.bhZ0q02Vs04TAPFGeV9g0w';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script>
   </body>
 </html>
