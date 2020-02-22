@@ -22,5 +22,18 @@ zoom: 12,
 style: 'mapbox://styles/givetti/ck6xe5cbc19yb1iqebbkqy7cz'
 });
 </script>
+    // Navigation Control
+map.addControl(
+ new mapboxgl.NavigationControl(), 'top-left'
+);
+// Geolocation Control
+map.addControl(new mapboxgl.GeolocateControl({
+  positionOptions: {
+    enableHighAccuracy: true
+  },
+  trackUserLocation: true
+}));
+    
+    
   </body>
 </html>
